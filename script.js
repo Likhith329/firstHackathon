@@ -1,195 +1,636 @@
-let employees = [
+let data=[
+  {
+    "id": "1",
+    "name": "Lura Senger",
+    "email": "Xander_Collier@yahoo.com"
+  },
+  {
+    "id": "2",
+    "name": "Wilburn Weber",
+    "email": "Bennett_Kreiger11@yahoo.com"
+  },
+  {
+    "id": "3",
+    "name": "Tyrique Hahn",
+    "email": "Juston.Altenwerth@yahoo.com"
+  },
+  {
+    "id": "4",
+    "name": "Lenny Bailey",
+    "email": "Guiseppe_Hegmann@yahoo.com"
+  },
+  {
+    "id": "5",
+    "name": "Vladimir Keeling",
+    "email": "Louisa_Walsh18@hotmail.com"
+  },
+  {
+    "id": "6",
+    "name": "Kellie Crona",
+    "email": "Chandler_Abernathy@yahoo.com"
+  },
+  {
+    "id": "7",
+    "name": "Carolina White",
+    "email": "Royal50@hotmail.com"
+  },
+  {
+    "id": "8",
+    "name": "Alfredo Conn",
+    "email": "Clarabelle34@hotmail.com"
+  },
+  {
+    "id": "9",
+    "name": "Stan Shanahan",
+    "email": "Lamar.McClure@hotmail.com"
+  },
+  {
+    "id": "10",
+    "name": "Marvin Fay",
+    "email": "Osbaldo58@hotmail.com"
+  },
+  {
+    "id": "11",
+    "name": "Torrance Rau",
+    "email": "Orin45@gmail.com"
+  },
+  {
+    "id": "12",
+    "name": "Harold Gutmann MD",
+    "email": "Alyce.Stracke37@yahoo.com"
+  },
+  {
+    "id": "13",
+    "name": "Taryn Torphy",
+    "email": "Dean_Breitenberg71@hotmail.com"
+  },
+  {
+    "id": "14",
+    "name": "Bryana Lang",
+    "email": "Tatum.Ullrich@yahoo.com"
+  },
+  {
+    "id": "15",
+    "name": "Nyasia Green DDS",
+    "email": "Dino83@gmail.com"
+  },
+  {
+    "id": "16",
+    "name": "Nasir Gerhold",
+    "email": "Lilian_Bashirian8@hotmail.com"
+  },
+  {
+    "id": "17",
+    "name": "Raymundo Ritchie PhD",
+    "email": "Antwan.Schoen15@yahoo.com"
+  },
+  {
+    "id": "18",
+    "name": "Delmer Marvin",
+    "email": "Kiera62@yahoo.com"
+  },
+  {
+    "id": "19",
+    "name": "Rachel Wilkinson",
+    "email": "Foster_Conroy@gmail.com"
+  },
+  {
+    "id": "20",
+    "name": "Gladys Howell",
+    "email": "Constance.Labadie10@yahoo.com"
+  },
+  {
+    "id": "21",
+    "name": "Ciara Klocko",
+    "email": "Harvey76@yahoo.com"
+  },
+  {
+    "id": "22",
+    "name": "Quentin O'Kon",
+    "email": "Amely_Cummings2@yahoo.com"
+  },
+  {
+    "id": "23",
+    "name": "Ms. Gabriella Kunde",
+    "email": "Lorenza_Cummerata@hotmail.com"
+  },
+  {
+    "id": "24",
+    "name": "Gerald Reilly",
+    "email": "Lia_Konopelski@gmail.com"
+  },
+  {
+    "id": "25",
+    "name": "Brody Carter I",
+    "email": "Colten.Wilderman90@hotmail.com"
+  },
+  {
+    "id": "26",
+    "name": "Alanis Klocko",
+    "email": "Johathan.Champlin69@gmail.com"
+  },
+  {
+    "id": "27",
+    "name": "Caroline Miller",
+    "email": "Delaney.Kozey74@gmail.com"
+  },
+  {
+    "id": "28",
+    "name": "Ms. Merritt McClure",
+    "email": "Wendy.Zieme@gmail.com"
+  },
+  {
+    "id": "29",
+    "name": "Jovani Schoen",
+    "email": "Norval_Zieme@hotmail.com"
+  },
+  {
+    "id": "30",
+    "name": "Berniece Bradtke",
+    "email": "Okey.Fisher39@hotmail.com"
+  },
+  {
+    "id": "31",
+    "name": "Hanna Gottlieb",
+    "email": "Edna62@hotmail.com"
+  },
+  {
+    "id": "32",
+    "name": "Christiana Bergnaum",
+    "email": "Donnie.Paucek22@gmail.com"
+  },
+  {
+    "id": "33",
+    "name": "Reid Stehr",
+    "email": "Hiram69@gmail.com"
+  },
+  {
+    "id": "34",
+    "name": "Evans Ward",
+    "email": "Liliane72@hotmail.com"
+  },
+  {
+    "id": "35",
+    "name": "Miss Enos Davis",
+    "email": "Kolby.Grady@hotmail.com"
+  },
+  {
+    "id": "36",
+    "name": "Mathew Lueilwitz",
+    "email": "Mariah.Hagenes@yahoo.com"
+  },
+  {
+    "id": "37",
+    "name": "Romaine Robel",
+    "email": "Sheila19@yahoo.com"
+  },
+  {
+    "id": "38",
+    "name": "Immanuel Aufderhar",
+    "email": "Aileen32@hotmail.com"
+  },
+  {
+    "id": "39",
+    "name": "Julius Reilly Jr.",
+    "email": "Santa89@yahoo.com"
+  },
+  {
+    "id": "40",
+    "name": "Linnea Borer",
+    "email": "Jarrett_Hegmann2@hotmail.com"
+  },
+  {
+    "id": "41",
+    "name": "Misael Abernathy IV",
+    "email": "Robbie42@yahoo.com"
+  },
+  {
+    "id": "42",
+    "name": "Mr. Gerda Jerde",
+    "email": "Gustave36@hotmail.com"
+  },
+  {
+    "id": "43",
+    "name": "Easton Daugherty",
+    "email": "Malcolm.Schuster11@hotmail.com"
+  },
+  {
+    "id": "44",
+    "name": "Leanna Gutkowski",
+    "email": "Chelsea9@gmail.com"
+  },
+  {
+    "id": "45",
+    "name": "Rollin Trantow",
+    "email": "Marques_Hickle26@gmail.com"
+  },
+  {
+    "id": "46",
+    "name": "Heaven Luettgen",
+    "email": "Lonnie.Greenfelder95@hotmail.com"
+  },
+  {
+    "id": "47",
+    "name": "Gilda Huel",
+    "email": "Stephania.Hintz@gmail.com"
+  },
+  {
+    "id": "48",
+    "name": "Javon Walker",
+    "email": "Lamar_Bailey39@yahoo.com"
+  },
+  {
+    "id": "49",
+    "name": "Stewart King",
+    "email": "Chasity_Jenkins82@gmail.com"
+  },
+  {
+    "id": "50",
+    "name": "Cortez Lueilwitz",
+    "email": "Lelia.Mitchell43@gmail.com"
+  },
+  {
+    "id": "51",
+    "name": "Ora Kilback",
+    "email": "Matt25@gmail.com"
+  },
+  {
+    "id": "52",
+    "name": "Lera Macejkovic",
+    "email": "Jamal.Donnelly45@hotmail.com"
+  },
+  {
+    "id": "53",
+    "name": "Asa Gottlieb",
+    "email": "Carolyne.Langosh@yahoo.com"
+  },
+  {
+    "id": "54",
+    "name": "Avery Nienow",
+    "email": "Hudson_Bernhard47@yahoo.com"
+  },
+  {
+    "id": "55",
+    "name": "Dr. Katrine Ryan",
+    "email": "Colten40@gmail.com"
+  },
+  {
+    "id": "56",
+    "name": "Florida Kulas",
+    "email": "Alejandra_Bernhard@yahoo.com"
+  },
+  {
+    "id": "57",
+    "name": "Mauricio Gerlach",
+    "email": "Vincenza_Gusikowski84@hotmail.com"
+  },
+  {
+    "id": "58",
+    "name": "Chadrick Simonis",
+    "email": "Reymundo.Doyle@gmail.com"
+  },
+  {
+    "id": "59",
+    "name": "Beau Jenkins",
+    "email": "Cletus65@hotmail.com"
+  },
+  {
+    "id": "60",
+    "name": "Camilla Cole",
+    "email": "Eda48@yahoo.com"
+  },
+  {
+    "id": "61",
+    "name": "Abagail MacGyver",
+    "email": "Jevon.Koch@hotmail.com"
+  },
+  {
+    "id": "62",
+    "name": "Ludwig Prohaska",
+    "email": "Eldon_DuBuque37@yahoo.com"
+  },
+  {
+    "id": "63",
+    "name": "Berenice Hane",
+    "email": "Lonnie3@gmail.com"
+  },
+  {
+    "id": "64",
+    "name": "Abel Durgan",
+    "email": "Marlee.Weimann42@gmail.com"
+  },
+  {
+    "id": "65",
+    "name": "Tate Kuhlman",
+    "email": "Hope31@yahoo.com"
+  },
+  {
+    "id": "66",
+    "name": "Mrs. Hermina Daniel",
+    "email": "Murphy59@yahoo.com"
+  },
+  {
+    "id": "67",
+    "name": "Marcelino Nienow",
+    "email": "Estefania_Dibbert97@hotmail.com"
+  },
+  {
+    "id": "68",
+    "name": "Raphaelle Connelly",
+    "email": "Josie.Legros70@yahoo.com"
+  },
+  {
+    "id": "69",
+    "name": "Mina Heaney",
+    "email": "Pete.Hermann79@hotmail.com"
+  },
+  {
+    "id": "70",
+    "name": "Jaida Torp",
+    "email": "Jonatan82@yahoo.com"
+  },
+  {
+    "id": "71",
+    "name": "Megane Fadel",
+    "email": "Dandre82@yahoo.com"
+  },
+  {
+    "id": "72",
+    "name": "Angelo Schimmel V",
+    "email": "Frederic54@hotmail.com"
+  },
+  {
+    "id": "73",
+    "name": "Jaren Ferry DDS",
+    "email": "Kristian.Kilback@yahoo.com"
+  },
+  {
+    "id": "74",
+    "name": "Annette O'Connell",
+    "email": "Domenica.Christiansen@gmail.com"
+  },
+  {
+    "id": "75",
+    "name": "Elenor Rohan PhD",
+    "email": "Alvera.Huel48@yahoo.com"
+  },
+  {
+    "id": "76",
+    "name": "Linnie Beier",
+    "email": "Reece_Berge@gmail.com"
+  },
+  {
+    "id": "77",
+    "name": "Maybelle Lehner",
+    "email": "Arlo.Hagenes@gmail.com"
+  },
+  {
+    "id": "78",
+    "name": "Hailie Haag",
+    "email": "Edythe.Lind59@hotmail.com"
+  },
+  {
+    "id": "79",
+    "name": "Marcelina Schuppe",
+    "email": "Kip.Cummerata77@gmail.com"
+  },
+  {
+    "id": "80",
+    "name": "Ezra Lang",
+    "email": "Garret.Swaniawski@hotmail.com"
+  },
+  {
+    "id": "81",
+    "name": "Carey Kiehn",
+    "email": "Sabrina70@gmail.com"
+  },
+  {
+    "id": "82",
+    "name": "Carole Aufderhar",
+    "email": "Efrain.Schamberger77@hotmail.com"
+  },
+  {
+    "id": "83",
+    "name": "Fanny Beatty",
+    "email": "Ewald28@yahoo.com"
+  },
+  {
+    "id": "84",
+    "name": "Mina Lubowitz",
+    "email": "Vincenzo.Herman@gmail.com"
+  },
+  {
+    "id": "85",
+    "name": "Anabelle Thiel",
+    "email": "Amely.Renner@hotmail.com"
+  },
+  {
+    "id": "86",
+    "name": "Gerry Homenick",
+    "email": "Ada_Von54@hotmail.com"
+  },
+  {
+    "id": "87",
+    "name": "Domenico Maggio",
+    "email": "Freeman.Stamm@yahoo.com"
+  },
+  {
+    "id": "88",
+    "name": "Mauricio Bradtke III",
+    "email": "Alford83@yahoo.com"
+  },
+  {
+    "id": "89",
+    "name": "Bulah Yost III",
+    "email": "Nicolas_Schimmel6@yahoo.com"
+  },
+  {
+    "id": "90",
+    "name": "Orville Dibbert DDS",
+    "email": "Bryana_Herzog@yahoo.com"
+  },
+  {
+    "id": "91",
+    "name": "Autumn Osinski",
+    "email": "Davin8@hotmail.com"
+  },
+  {
+    "id": "92",
+    "name": "Levi Gibson",
+    "email": "Deangelo69@gmail.com"
+  },
+  {
+    "id": "93",
+    "name": "Reva McKenzie",
+    "email": "Bret40@hotmail.com"
+  },
+  {
+    "id": "94",
+    "name": "Jensen Pfannerstill",
+    "email": "Dax_Marquardt@hotmail.com"
+  },
+  {
+    "id": "95",
+    "name": "Tyrese Larson MD",
+    "email": "Cecelia85@yahoo.com"
+  },
+  {
+    "id": "96",
+    "name": "Dayne Sanford",
+    "email": "Tyrique_Waters16@hotmail.com"
+  },
+  {
+    "id": "97",
+    "name": "Jeramy Steuber",
+    "email": "Catalina.Stehr24@yahoo.com"
+  },
+  {
+    "id": "98",
+    "name": "Madge Bogisich",
+    "email": "Joey.Marquardt50@gmail.com"
+  },
+  {
+    "id": "99",
+    "name": "Casimer MacGyver",
+    "email": "Julius.Bednar96@yahoo.com"
+  },
+  {
+    "id": "100",
+    "name": "Arlene Kassulke",
+    "email": "Josiane_Smith@yahoo.com"
+  }
+]
+
+
+let predata=document.getElementById("pre")
+predata.addEventListener("click",function(){
+  let btndata=document.querySelectorAll("#num")
+  if(btndata[0].innerHTML!=1){
+  btndata.forEach(x=>{
+      x.innerHTML--
+    })}})
+  
+
+let ndata=document.getElementById("nxt")
+ndata.addEventListener("click",function(){
+  let btndata=document.querySelectorAll("#num")
+  if(btndata[btndata.length-1].innerHTML!=100){
+  btndata.forEach(x=>{
+      x.innerHTML++
+    })}})
+let idat=document.getElementById("id")
+idat.innerHTML=data[0].id
+let namdat=document.getElementById("nam")
+namdat.innerHTML=data[0].name
+let emdata=document.getElementById("email")
+emdata.innerHTML=data[0].email
+
+let btns=document.querySelectorAll("#num")
+btns.forEach(x=>{
+  x.addEventListener("click",function(){
+    let no=x.innerHTML
+    no--
+    let idat=document.getElementById("id")
+    idat.innerHTML=data[no].id
+    let namdat=document.getElementById("nam")
+    namdat.innerHTML=data[no].name
+    let emdata=document.getElementById("email")
+    emdata.innerHTML=data[no].email
+  })
+})
+
+
+
+
+
+
+
+
+const reviews = [
   {
     id: 1,
-    first_name: "Suresh",
-    last_name: "Kumar",
-    email: "suresh@gmail.com",
-    gender: "male",
-    ip_address: "160.192.178.23",
+    name: "susan smith",
+    job: "web developer",
+    img:
+      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
+    text:
+      "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
   },
-
   {
     id: 2,
-    first_name: "Sourav",
-    last_name: "Das",
-    email: "sourav@gmail.com",
-    gender: "male",
-    ip_address: "160.192.168.23",
+    name: "anna johnson",
+    job: "web designer",
+    img:
+      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg",
+    text:
+      "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.",
   },
-
   {
     id: 3,
-    first_name: "Jhansi",
-    last_name: "Das",
-    email: "jhansi@gmail.com",
-    gender: "female",
-    ip_address: "160.192.128.23",
+    name: "peter jones",
+    job: "intern",
+    img:
+      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg",
+    text:
+      "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.",
   },
-
   {
     id: 4,
-    first_name: "John",
-    last_name: "Paul",
-    email: "john@gmail.com",
-    gender: "male",
-    ip_address: "160.192.198.23",
-  },
-  {
-    id: 5,
-    first_name: "Lavish",
-    last_name: "paul",
-    email: "lavish@gmail.com",
-    gender: "male",
-    ip_address: "160.192.148.23",
-  },
-
-  {
-    id: 6,
-    first_name: "Sourav",
-    last_name: "Paul",
-    email: "sourav@gmail.com",
-    gender: "male",
-    ip_address: "160.192.128.23",
-  },
-  {
-    id: 7,
-    first_name: "Sangeetha",
-    last_name: "Paul",
-    email: "sangeetha@gmail.com",
-    gender: "female",
-    ip_address: "160.193.178.23",
-  },
-
-  {
-    id: 8,
-    first_name: "Pavan",
-    last_name: "Sai",
-    email: "pavan@gmail.com",
-    gender: "male",
-    ip_address: "160.172.178.23",
-  },
-  {
-    id: 9,
-    first_name: "Pavni",
-    last_name: "Das",
-    email: "pavni@gmail.com",
-    gender: "female",
-    ip_address: "160.162.178.23",
-  },
-  {
-    id: 10,
-    first_name: "Jenny",
-    last_name: "Paul",
-    email: "jenny@gmail.com",
-    gender: "female",
-    ip_address: "160.182.178.23",
+    name: "bill anderson",
+    job: "the boss",
+    img:
+      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg",
+    text:
+      "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
   },
 ];
+let no=1
+no--
+let idt=document.getElementById("id1")
+let ndt=document.getElementById("nam1")
+let jdt=document.getElementById("job")
+let imdt=document.getElementById("img")
+let tdt=document.getElementById("txt")
+ idt.innerHTML=reviews[0].id
+ ndt.innerHTML=reviews[0].name
+ jdt.innerHTML=reviews[0].job
+ imdt.setAttribute("src",reviews[0].img)
+ tdt.innerHTML=reviews[0].text
 
-
-
-
-let bdata1=document.getElementById("btn-1");
-bdata1.addEventListener("click",function(){
-var dat=document.getElementById("bdy")
-dat.innerHTML=''
-var a=0
-employees.forEach(x =>{
-  ++a
-  let row=`<tr>
-  <td>${a}</td>
-  <td>${x.id}</td> 
-  <td>${x.first_name}</td> 
-  <td>${x.last_name}</td> 
-  <td>${x.email}</td> 
-  <td>${x.gender}</td> 
-  <td>${x.ip_address}</td> 
-   </tr>`
-   
-   dat.innerHTML+= row
-})
-
+ let prvdat=document.querySelector(".pre1")
+ prvdat.addEventListener("click",function(){
+ let dat=document.querySelectorAll(".num1")
+ if(dat[0].innerHTML!=1){
+ dat.forEach(x=>{
+  
+  x.innerHTML--
  })
+ }})
 
-
-
-
-let bdata2=document.getElementById("btn-2")
-bdata2.addEventListener("click",function(){
-var dat=document.getElementById("bdy")
-dat.innerHTML=''
-let fildata=employees.filter(x =>{
-return x.gender=="male"
-})
-var a=0
-fildata.forEach(x=>{
-  ++a
-  let row=`<tr>
-  <td>${a}</td>
-  <td>${x.id}</td> 
-  <td>${x.first_name}</td> 
-  <td>${x.last_name}</td> 
-  <td>${x.email}</td> 
-  <td>${x.gender}</td> 
-  <td>${x.ip_address}</td> 
-   </tr>`
-   dat.innerHTML+= row
-})
-}) 
-
-
-let bdata3=document.getElementById("btn-3")
-bdata3.addEventListener("click",function(){
-var dat=document.getElementById("bdy")
-dat.innerHTML=''
-let fildata=employees.filter(x =>{
-return x.gender=="female"
-
-})
-var a=0
-fildata.forEach(x=>{
-  ++a
-  let row=`<tr>
-  <td>${a}</td>
- <td>${x.id}</td> 
- <td>${x.first_name}</td> 
- <td>${x.last_name}</td> 
- <td>${x.email}</td> 
- <td>${x.gender}</td> 
- <td>${x.ip_address}</td> 
-  </tr>`
-  dat.innerHTML+= row
-})
-}) 
-
-
-let srchdat=document.getElementById("srch")
-srchdat.addEventListener("input",function(){
-let dataval=srchdat.value
-let filsrchdata=employees.filter(x=>{
-
-
-   return x.first_name.includes(dataval)==true || x.last_name.includes(dataval)==true || x.id==dataval
-
-
-})
-var dat=document.getElementById("bdy");
-dat.innerHTML=''
-var a=0
-filsrchdata.forEach(x=>{
-  ++a
-  let row=`<tr>
-  <td>${a}</td>
- <td>${x.id}</td> 
- <td>${x.first_name}</td> 
- <td>${x.last_name}</td> 
- <td>${x.email}</td> 
- <td>${x.gender}</td> 
- <td>${x.ip_address}</td> 
-  </tr>`
-  dat.innerHTML+= row
-})
-
-
-})
-
+ let ndat=document.querySelector(".nxt1")
+ ndat.addEventListener("click",function(){
+ let dat=document.querySelectorAll(".num1")
+ if(dat[dat.length-1].innerHTML!=4){
+ dat.forEach(x=>{
+  
+  x.innerHTML++
+ })
+ }})
+ 
+ let btndata=document.querySelectorAll(".num1")
+ btndata.forEach(x=>{
+  x.addEventListener("click",function(){
+    let idt=document.getElementById("id1")
+    let ndt=document.getElementById("nam1")
+    let jdt=document.getElementById("job")
+    let imdt=document.getElementById("img")
+    let tdt=document.getElementById("txt")
+    let no=x.innerHTML
+    no--
+    idt.innerHTML=reviews[no].id
+    ndt.innerHTML=reviews[no].name
+    jdt.innerHTML=reviews[no].job
+    imdt.setAttribute("src",reviews[no].img)
+    tdt.innerHTML=reviews[no].text
+  })
+ })

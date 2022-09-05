@@ -4,35 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" >
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
-    <section class="container mt-5">
-    <button id="btn-1">All employees</button>
-    <button id="btn-2">Male employees</button>
-    <button id="btn-3">Female employees</button>
-    </section>
-<br>
-<input type="search" id="srch" placeholder="Search here"><br><br>
+    <div style="display:flex; justify-content: center;"><h1>Pagination-1</h1></div>
+  <div class="content1">
+    <div class="pagin">
+      <div class="btns">
+        <span id="pre"><span><<</span> <span>Previous</span></span>
+        <span id="num">1</span>
+        <span id="num">2</span>
+        <span id="num">3</span>
+        <span id="num">4</span>
+        <span id="num">5</span>
+        <span id="num">6</span>
+        <span id="num">7</span>
+        <span id="num">8</span>
+        <span id="num">9</span>
+        <span id="num">10</span>
+        <span id="nxt">Next>></span>
+      </div>
+      
+      </div>
+  <div class="info">
+<div class="id"><b>Id:</b><span id="id"></span></div>
+<div class="nam"><b>Name:</b><span id="nam"></span></div>
+<div class="email"><b>Email:</b><span id="email"></span></div></div>
 
-    <table class="table">
-         <thead class="thd" >
-            <tr>
-                <th>S.no</th>
-                <th>Id</th> 
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Email</th>
-                <th>Gender</th>
-                <th>Ip adress</th>
-            </tr>
-         </thead>
-         <tbody id="bdy">
+  </div>
+<hr>
 
-         </tbody>
-    </table>
-     <script src="script.js"></script>
+
+<div style="display:flex; justify-content:center;"><h1>Pagination-2</h1></div>
+<div class="content2">
+  <div class="info1">
+    <div class="dt"><b>Id:</b> <span id="id1"></span></div>
+    <div class="dt"><img src="" alt="" id="img" height="250px" width="250px"></div>
+    <div class="dt"><b>Name:</b> <span id="nam1"></span></div>
+    <div class="dt"><b>Job:</b> <span id="job"></span></div>
+    
+    <div class="dt"><b>Text:</b> <br> <span id="txt"></span></div>
+  </div>
+  <div class="pagin1">
+    <ul class="lst" style="list-style:none ; display: flex;">
+      <li class="pre1"><span><<</span> Previous</li>
+      <li class="num1" >1</li>
+      <li class="num1" >2</li>
+      <li class="nxt1">Next>></li>
+  
+    </ul>
+  </div></div>
+<script src="script.js"></script>
 </body>
-</html>
+
+</html>      

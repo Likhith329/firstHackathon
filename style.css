@@ -1,16 +1,102 @@
+.btns{
+    display: flex;
+}
 
-.thd{
-    background-color: blue;
+.content1{
+    margin: 50px auto;width: fit-content;
+}
+#num{
+    background-color: aqua;
+    border: 1px solid lightblue;
+    padding: 20px;
+}
+#num:hover{
+    background-color: bisque;
+}
+#id{
     font-size: 25px;
 }
-#bdy{
-    background-color:lightblue;
-    font-size: 20px;
+#nam{
+    font-size: 25px;
+}
+#email{
+    font-size: 25px;
+}
+.info{
+    width:100%; margin-top: 20px; padding: 10px;
+    display: flex;flex-direction: column;
+    justify-content:space-between;
+    height: 200px; background-color: rgba(21, 204, 204, 0.614);
+}
+.pagin{
+    width: max-content;
+}
+#pre,#nxt{
+    background-color: aqua; padding: 20px;
+}
+#pre:hover,#nxt:hover,#num:hover{
+    cursor: pointer;
+}
+#pre:active,#nxt:active,#num:active{
+    background-color: blue;
 }
 
-#srch{ width: 25%;
-    font-size: 20px;
+
+
+
+
+
+
+
+
+.info1{
+    display: flex; flex-direction: column;
+    margin:50px auto; margin-bottom: 0;
+    width: 50%;
+    background-color: rgba(21, 204, 204, 0.614);
+    align-items: center;
 }
-::-webkit-input-placeholder{
-    font-size: 20px;
+
+.content2{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pagin1{
+    margin:10px auto; margin-top: 0;
+    width: 50%;
+   
+    align-items: center;
+}
+
+
+li{
+   padding: 10px;
+   width: 100px;
+   background-color: aqua;
+}
+li:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+#id1{
+    width: 100%;
+font-size: larger;
+}
+
+#nam1{
+font-size: larger;
+}
+
+#job{
+font-size: larger;
+}
+
+#txt{
+font-size: large;
+width: 100%;
+}
+#img{
+    border-radius: 125px;
 }
