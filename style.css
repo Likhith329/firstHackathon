@@ -1,82 +1,102 @@
-form{
-    padding-top: 20px; background-color: rgb(210, 215, 217);
-}
-.name{
-    margin-left:20px ;
-}
-.boxes{
-    display: flex; margin: 20px ; margin-top: 0;
-}
-.box2{
-    margin-left: 30px;  
-}
-.email{
-    margin-left: 20px;
-}
-.emailbox{
-    margin: 20px; margin-top: 0; width: 410px;
-}
-.exp{
-    margin-left: 20px;
-}
-
-
-.rating{
+.btns{
     display: flex;
-    /*transform:rotateY(180deg) translate(1006px); */
-    transform: rotateY(180deg) ; transform-origin: 130px;
-}
-.rating input{
-    display: none;
-}
-.rating label{
-    display:block ;
-    width: 50px;
-}
-.rating label:before{
-    content:'\f005'; position: relative;
-    font-family: "FontAwesome"; 
-    font-size: 40px; color:white;
-}
-.rating label:after{
-    content:'\f005'; 
-    font-family: "FontAwesome";
-    font-size: 40px; color: yellow;
-    position: relative; opacity: 0; left: -45px;
-}
-.rating label:hover:after, 
-.rating label:hover ~ label:after,
-.rating input:checked ~ label:after{
-    opacity: 1;
 }
 
-.text{
-    margin-left: 20px; font-size: large; font-family: serif;
+.content1{
+    margin: 50px auto;width: fit-content;
+}
+#num{
+    background-color: aqua;
+    border: 1px solid lightblue;
+    padding: 20px;
+}
+#num:hover{
+    background-color: bisque;
+}
+#id{
+    font-size: 25px;
+}
+#nam{
+    font-size: 25px;
+}
+#email{
+    font-size: 25px;
+}
+.info{
+    width:100%; margin-top: 20px; padding: 10px;
+    display: flex;flex-direction: column;
+    justify-content:space-between;
+    height: 200px; background-color: rgba(21, 204, 204, 0.614);
+}
+.pagin{
+    width: max-content;
+}
+#pre,#nxt{
+    background-color: aqua; padding: 20px;
+}
+#pre:hover,#nxt:hover,#num:hover{
+    cursor: pointer;
+}
+#pre:active,#nxt:active,#num:active{
+    background-color: blue;
 }
 
-.message{
-    width: 500px; height: 100px; margin-left: 20px;
+
+
+
+
+
+
+
+
+.info1{
+    display: flex; flex-direction: column;
+    margin:50px auto; margin-bottom: 0;
+    width: 50%;
+    background-color: rgba(21, 204, 204, 0.614);
+    align-items: center;
 }
 
-.tablemessage{
-    margin-left: 20px;
-}
-.table{
-    margin: 20px; margin-top: 0;
+.content2{
+    display: flex;
+    flex-direction: column;
+
 }
 
-input[type=radio]{
-    height: 20px;
-    width: 20px; 
+.pagin1{
+    margin:10px auto; margin-top: 0;
+    width: 50%;
+   
+    align-items: center;
 }
 
-.area{
-    margin-left: 20px; width: 100%; height:100px;
+
+li{
+   padding: 10px;
+   width: 100px;
+   background-color: aqua;
+}
+li:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+#id1{
+    width: 100%;
+font-size: larger;
 }
 
-.button{
-    margin:10px; margin-left: 20px;
+#nam1{
+font-size: larger;
 }
-.but button{
-    padding: 10px;
+
+#job{
+font-size: larger;
+}
+
+#txt{
+font-size: large;
+width: 100%;
+}
+#img{
+    border-radius: 125px;
 }
