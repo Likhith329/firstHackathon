@@ -1,62 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/e24f3b2989.js" crossorigin="anonymous"></script>
+  <title>Document</title>
 </head>
 <body>
-    <div style="display:flex; justify-content: center;"><h1>Pagination-1</h1></div>
-  <div class="content1">
-    <div class="pagin">
-      <div class="btns">
-        <span id="pre"><span><<</span> <span>Previous</span></span>
-        <span id="num">1</span>
-        <span id="num">2</span>
-        <span id="num">3</span>
-        <span id="num">4</span>
-        <span id="num">5</span>
-        <span id="num">6</span>
-        <span id="num">7</span>
-        <span id="num">8</span>
-        <span id="num">9</span>
-        <span id="num">10</span>
-        <span id="nxt">Next>></span>
-      </div>
-      
-      </div>
-  <div class="info">
-<div class="id"><b>Id:</b><span id="id"></span></div>
-<div class="nam"><b>Name:</b><span id="nam"></span></div>
-<div class="email"><b>Email:</b><span id="email"></span></div></div>
-
-  </div>
-<hr>
-
-
-<div style="display:flex; justify-content:center;"><h1>Pagination-2</h1></div>
-<div class="content2">
-  <div class="info1">
-    <div class="dt"><b>Id:</b> <span id="id1"></span></div>
-    <div class="dt"><img src="" alt="" id="img" height="250px" width="250px"></div>
-    <div class="dt"><b>Name:</b> <span id="nam1"></span></div>
-    <div class="dt"><b>Job:</b> <span id="job"></span></div>
+  <form >
+    <label class="name"><b>Name</b><sup>*</sup></label>
+    <div class="boxes">
+  <div class="box1"><input type="text" ><br><small>First</small></div>
+  <div class="box2"><input type="text" ><br><small>Last</small></div></div>
     
-    <div class="dt"><b>Text:</b> <br> <span id="txt"></span></div>
+  <label class="email"><b>Email</b><sup>*</sup></label>
+  <div><input class="emailbox" type="email"></div>
+   
+  <label class="exp"><b>Your Experience</b><sup>*</sup></label>
+  <div class="rating">
+    <input type="radio" name="star" id="star1" value="Loved it!!"><label for="star1"></label>
+    <input type="radio" name="star" id="star2" value="Excellent!!"><label for="star1"></label>
+    <input type="radio" name="star" id="star3" value="Good"><label for="star3"></label>
+    <input type="radio" name="star" id="star4" value="Not bad"><label for="star4"></label>
+    <input type="radio" name="star" id="star5" value="Very bad"><label for="star5"></label>
   </div>
-  <div class="pagin1">
-    <ul class="lst" style="list-style:none ; display: flex;">
-      <li class="pre1"><span><<</span> Previous</li>
-      <li class="num1" >1</li>
-      <li class="num1" >2</li>
-      <li class="nxt1">Next>></li>
-  
-    </ul>
-  </div></div>
-<script src="script.js"></script>
-</body>
+  <div class="text"></div>
 
-</html>      
+  <div class="tablemessage"><b>How satisfied are you with<sup>*</sup></b></div>
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <td></td>
+        <td>Very Unsatisfied</td>
+        <td> Unsatisfied</td>
+        <td>Neutral</td>
+        <td>Satisfied</td>
+        <td>Very Satified</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Purchase</td>
+        <td><input type="radio" name="r4"></td>
+        <td><input type="radio" name="r4"></td>
+        <td><input type="radio" name="r4"></td>
+        <td><input type="radio" name="r4"></td>
+        <td><input type="radio" name="r4"></td>
+        
+      </tr>
+      <tr>
+        <td>Service</td>
+        <td><input type="radio" name="r5"></td>
+        <td><input type="radio" name="r5"></td>
+        <td><input type="radio" name="r5"></td>
+        <td><input type="radio" name="r5"></td>
+        <td><input type="radio" name="r5"></td>
+      </tr>
+      <tr>
+        <td>Company Overall</td>
+        <td><input type="radio" name="r6"></td>
+        <td><input type="radio" name="r6"></td>
+        <td><input type="radio" name="r6"></td>
+        <td><input type="radio" name="r6"></td>
+        <td><input type="radio" name="r6"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="tablemessage"><b>How likely are you to<sup>*</sup></b></div>
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <td></td>
+        <td>Very Unlikely</td>
+        <td>Unlikely</td>
+        <td>Neutral</td>
+        <td>Likely</td>
+        <td>Very Likely</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Buy from us again</td>
+        <td><input type="radio" name="r1"></td>
+        <td><input type="radio" name="r1"></td>
+        <td><input type="radio" name="r1"></td>
+        <td><input type="radio" name="r1"></td>
+        <td><input type="radio" name="r1"></td>
+      </tr>
+      <tr>
+        <td>Recommend our product to others</td>
+        <td><input type="radio" name="r2"></td>
+        <td><input type="radio" name="r2"></td>
+        <td><input type="radio" name="r2"></td>
+        <td><input type="radio" name="r2"></td>
+        <td><input type="radio" name="r2"></td>
+      </tr>
+      <tr>
+        <td>Recommend our company to others</td>
+        <td><input type="radio" name="r3"></td>
+        <td><input type="radio" name="r3"></td>
+        <td><input type="radio" name="r3"></td>
+        <td><input type="radio" name="r3"></td>
+        <td><input type="radio" name="r3"></td>
+      </tr>
+    </tbody>
+  </table>
+
+<div class="tablemessage"><b>Additional comments or suggestions</b></div>
+<div><textarea class="area" ></textarea></div>
+
+<div class="button"><button>Submit</button></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
