@@ -1,82 +1,8 @@
-form{
-    padding-top: 20px; background-color: rgb(210, 215, 217);
-}
-.name{
-    margin-left:20px ;
-}
-.boxes{
-    display: flex; margin: 20px ; margin-top: 0;
-}
-.box2{
-    margin-left: 30px;  
-}
-.email{
-    margin-left: 20px;
-}
-.emailbox{
-    margin: 20px; margin-top: 0; width: 410px;
-}
-.exp{
-    margin-left: 20px;
-}
-
-
-.rating{
-    display: flex;
-    /*transform:rotateY(180deg) translate(1006px); */
-    transform: rotateY(180deg) ; transform-origin: 130px;
-}
-.rating input{
-    display: none;
-}
-.rating label{
-    display:block ;
-    width: 50px;
-}
-.rating label:before{
-    content:'\f005'; position: relative;
-    font-family: "FontAwesome"; 
-    font-size: 40px; color:white;
-}
-.rating label:after{
-    content:'\f005'; 
-    font-family: "FontAwesome";
-    font-size: 40px; color: yellow;
-    position: relative; opacity: 0; left: -45px;
-}
-.rating label:hover:after, 
-.rating label:hover ~ label:after,
-.rating input:checked ~ label:after{
-    opacity: 1;
-}
-
 .text{
-    margin-left: 20px; font-size: large; font-family: serif;
+   padding: 200px; margin: 100px; text-align: center; margin-bottom:0; font-size: 75px;
 }
-
-.message{
-    width: 500px; height: 100px; margin-left: 20px;
+.button{ 
+    display:flex; width:100%; align-items: center; justify-content: center;
 }
-
-.tablemessage{
-    margin-left: 20px;
-}
-.table{
-    margin: 20px; margin-top: 0;
-}
-
-input[type=radio]{
-    height: 20px;
-    width: 20px; 
-}
-
-.area{
-    margin-left: 20px; width: 100%; height:100px;
-}
-
-.button{
-    margin:10px; margin-left: 20px;
-}
-.but button{
-    padding: 10px;
-}
+button{
+    padding: 10px; width: 100px; }
