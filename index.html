@@ -7,14 +7,29 @@
   <link rel="stylesheet" href="style.css">
   <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-<script src="https://kit.fontawesome.com/e24f3b2989.js" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
 <body>
-    <div class="text">10</div>
-    <div class="button"><button>Start</button></div>
-    
+   <div class="main-heading">THE ICE AND FIRE</div>
+  <div class="button"><button class="btn btn-success" onclick="show()">Click here to view Books</button></div>
+  
+  <div class="content">
+    <div class="pagination">
+      <button class="btn btn-primary" onclick="displayData(1)">Page 1</button>
+      <button class="btn btn-primary" onclick="displayData(2)">Page 2</button>
+      <button class="btn btn-primary" onclick="displayData(3)">Page 3</button>
+      <button class="btn btn-primary" onclick="displayData(4)">Page 4</button>
+    </div>
 
+  <div class="container-fluid">
+    
+  </div>
+
+  <div class="button">
+    <button class="btn btn-success" onclick="showChar()">Click here to show respective characters</button>
+    <button class="btn btn-success" onclick="hideChar()">Click here to hide respective characters</button>
+    <button class="btn btn-success" onclick="hide()">Click here to hide Books</button></div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
